@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hiep's Site</title>
+    <style>
+        .contaner {
+            max-width: 960px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+        }
+        .contaner .content-mail {
+            width: 50%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+            height: 450px;
+        }
+        .button {
+            width: 120px;
+            height: 40px;
+            border: 1px solid skyblue;
+            border-radius: 5px;
+            color: black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table style="width: 100%; height: auto; border: 1px solid black; border-radius: 10px">
+        <tr>
+            <th>
+                <center><b>Confirm Account</b></center>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <center>
+                    <form action="{{url}}">
+                        <input type="submit" value="Confirm account" style="border: 1px solid #ffffff; background: violet; color: #333333; border-radius: 5px">
+                    </form>
+                </center>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <center><img src="{{qrCode}}" /></center>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
